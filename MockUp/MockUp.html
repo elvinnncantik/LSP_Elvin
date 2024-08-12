@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Biodata</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Input Biodata</h1>
+    <form>
+      <label for="nik">NIK:</label>
+      <input type="text" id="nik" name="nik" required />
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="tempat_lahir">Tempat Lahir:</label>
+      <input type="text" id="tempat_lahir" name="tempat_lahir" required />
+
+      <label for="jenis_kelamin">Jenis Kelamin:</label>
+      <select id="jenis_kelamin" name="jenis_kelamin" required>
+        <option value="laki-laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+      </select>
+
+      <label for="alamat">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" required />
+
+      <label for="agama">Agama:</label>
+      <select id="agama" name="agama" required>
+        <option value="kristen">Kristen</option>
+        <option value="islam">Islam</option>
+        <option value="katholik">Katholik</option>
+        <option value="hindu">Hindu</option>
+        <option value="khonghucu">khonghucu</option>
+        <option value="buddha">Buddha</option>
+      </select>
+
+      <button type="submit">Send</button>
+      <button type="reset">Cancel</button>
+    </form>
+  </body>
+</html>
